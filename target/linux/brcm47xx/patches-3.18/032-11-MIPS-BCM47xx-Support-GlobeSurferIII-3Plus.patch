@@ -1,0 +1,23 @@
+--- a/arch/mips/bcm47xx/board.c
++++ b/arch/mips/bcm47xx/board.c
+@@ -182,6 +182,8 @@ struct bcm47xx_board_type_list3 bcm47xx_
+ 	{{BCM47XX_BOARD_LINKSYS_WRT54G_TYPE_0101, "Linksys WRT54G/GS/GL"}, "0x0101", "42", "0x10"},
+ 	{{BCM47XX_BOARD_LINKSYS_WRT54G_TYPE_0467, "Linksys WRT54G/GS/GL"}, "0x0467", "42", "0x10"},
+ 	{{BCM47XX_BOARD_LINKSYS_WRT54G_TYPE_0708, "Linksys WRT54G/GS/GL"}, "0x0708", "42", "0x10"},
++	{{BCM47XX_BOARD_OPTION_GS3, "Option GlobeSurfer III"}, "0x048e", "GP29ABB12X", "0x10"},
++	{{BCM47XX_BOARD_OPTION_GS3PLUS, "Option GlobeSurfer 3+"}, "0x048e", "HG29D1M3WC", "0x10"},
+ 	{ {0}, NULL},
+ };
+ 
+--- a/arch/mips/include/asm/mach-bcm47xx/bcm47xx_board.h
++++ b/arch/mips/include/asm/mach-bcm47xx/bcm47xx_board.h
+@@ -116,6 +116,9 @@ enum bcm47xx_board {
+ 
+ 	BCM47XX_BOARD_ZTE_H218N,
+ 
++	BCM47XX_BOARD_OPTION_GS3,
++	BCM47XX_BOARD_OPTION_GS3PLUS,
++
+ 	BCM47XX_BOARD_UNKNOWN,
+ 	BCM47XX_BOARD_NO,
+ };
